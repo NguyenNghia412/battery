@@ -1,40 +1,16 @@
 <template>
-    <div class="header-top">
-        <div class="container">
-            <div class="header-left">
-                <a href="tel:#"><i class="icon-phone"></i>Call: +0123 456 789</a>
+    <!-- DEFAULT TOP HEADER -->
+    <div class="font-normal text-2xl mb-0 bg-gray-100 py-3">
+        <div class="container relative flex items-center px-3">
+            <div class="flex items-center">
+                <a href="tel:#" class="text-gray-500"><i class="icon-phone"></i>Gọi: +0123 456 789</a>
             </div><!-- End .header-left -->
-
-            <div class="header-right">
-
-                <ul class="top-menu">
-                    <li>
-                        <a href="#">Links</a>
-                        <ul>
-                            <li>
-                                <div class="header-dropdown">
-                                    <a href="#">USD</a>
-                                    <div class="header-menu">
-                                        <ul>
-                                            <li><a href="#">Eur</a></li>
-                                            <li><a href="#">Usd</a></li>
-                                        </ul>
-                                    </div><!-- End .header-menu -->
-                                </div>
-                            </li>
-                            <li>
-                                <div class="header-dropdown">
-                                    <a href="#">English</a>
-                                    <div class="header-menu">
-                                        <ul>
-                                            <li><a href="#">English</a></li>
-                                            <li><a href="#">French</a></li>
-                                            <li><a href="#">Spanish</a></li>
-                                        </ul>
-                                    </div><!-- End .header-menu -->
-                                </div>
-                            </li>
-                            <li><a href="#signin-modal" data-toggle="modal">Sign in / Sign up</a></li>
+            <div class="flex items-center self-stretch ml-auto">
+                <ul class="capitalize m-0 p-0">
+                    <li class="relative">
+                        <a href="#" class="hidden">Links</a>
+                        <ul class="flex items-center m-0">
+                            <li><a href="#signin-modal" data-toggle="modal" class="inline-flex items-center text-gray-500">Đăng ký / Đăng nhập</a></li>
                         </ul>
                     </li>
                 </ul><!-- End .top-menu -->
