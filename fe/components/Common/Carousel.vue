@@ -1,5 +1,5 @@
 <template>
-    <div id="carouselExampleCaptions" class="relative" data-te-carousel-init data-te-ride="carousel" >
+    <div id="carouselExampleCaptions" class="relative" data-te-carousel-init data-te-ride="carousel">
         <!--Carousel indicators-->
         <div class="absolute bottom-0 left-0 right-0 z-[2] mx-[15%] mb-4 flex list-none justify-center p-0"
             data-te-carousel-indicators>
@@ -13,8 +13,8 @@
 
         <!--Carousel items-->
         <div class="relative w-full overflow-hidden after:clear-both after:block after:content-['']">
-             <!--First item-->
-             <div class="relative float-left -mr-[100%] w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none xs:h-[300px] md:h-[400px] lg:h-[500px]"
+            <!--First item-->
+            <div class="relative float-left -mr-[100%] w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none xs:h-[300px] md:h-[400px] lg:h-[500px]"
                 data-te-carousel-active data-te-carousel-item style="backface-visibility: hidden; ">
                 <div class="w-full h-full bg-cover"
                     style="background-image: url('https://tecdn.b-cdn.net/img/Photos/Slides/img%20(15).jpg')">
@@ -45,12 +45,11 @@
             </div>
             <!--Second item-->
             <div class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none xs:h-[300px] md:h-[400px] lg:h-[500px]"
-                data-te-carousel-item
-                style="backface-visibility: hidden">
+                data-te-carousel-item style="backface-visibility: hidden">
                 <div class="w-full h-full bg-cover"
                     style="background-image: url('https://tecdn.b-cdn.net/img/Photos/Slides/img%20(22).jpg');">
                     <div class="container absolute top-[10%] z-10">
-                        <div class="row justify-content-end" >
+                        <div class="row justify-content-end">
                             <div class="col-auto col-sm-7 col-md-6 col-lg-5">
                                 <h3 class="intro-subtitle text-primary">New Arrival</h3><!-- End .h3 intro-subtitle -->
                                 <h1 class="intro-title">Apple iPad Pro <br>12.9 Inch, 64GB </h1><!-- End .intro-title -->
