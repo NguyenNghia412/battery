@@ -32,7 +32,7 @@ import img5 from '~/assets/images/demos/demo-4/products/product-14.jpg';
 import img6 from '~/assets/images/demos/demo-4/products/product-15.jpg';
 import img7 from '~/assets/images/demos/demo-4/products/product-16.jpg';
 import img8 from '~/assets/images/demos/demo-4/products/product-17.jpg';
-import img9 from '~/assets/images/demos/demo-4/products/product-18.jpg';
+import img9 from '~/assets/images/demos/demo-4/products/product-17.jpg';
 
 const product = [
     {
