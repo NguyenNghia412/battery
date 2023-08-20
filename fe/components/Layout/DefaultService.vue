@@ -8,8 +8,8 @@
                   <i class="icon-rocket"></i>
                 </span>
                 <div class="icon-box-content">
-                  <h3 class="icon-box-title">Free Shipping</h3><!-- End .icon-box-title -->
-                  <p>Orders $50 or more</p>
+                  <h3 class="icon-box-title">Miễn phí ship</h3><!-- End .icon-box-title -->
+                  <p>Với đơn trên 3.000.000</p>
                 </div><!-- End .icon-box-content -->
               </div><!-- End .icon-box -->
             </div><!-- End .col-sm-6 col-lg-3 -->
@@ -21,8 +21,8 @@
                 </span>
 
                 <div class="icon-box-content">
-                  <h3 class="icon-box-title">Free Returns</h3><!-- End .icon-box-title -->
-                  <p>Within 30 days</p>
+                  <h3 class="icon-box-title">Đổi trả thoải mái</h3><!-- End .icon-box-title -->
+                  <p>Trong vòng 30 ngày</p>
                 </div><!-- End .icon-box-content -->
               </div><!-- End .icon-box -->
             </div><!-- End .col-sm-6 col-lg-3 -->
@@ -34,8 +34,8 @@
                 </span>
 
                 <div class="icon-box-content">
-                  <h3 class="icon-box-title">Get 20% Off 1 Item</h3><!-- End .icon-box-title -->
-                  <p>when you sign up</p>
+                  <h3 class="icon-box-title">Giảm giá 1 sản phẩm</h3><!-- End .icon-box-title -->
+                  <p>Khi đăng ký tài khoản</p>
                 </div><!-- End .icon-box-content -->
               </div><!-- End .icon-box -->
             </div><!-- End .col-sm-6 col-lg-3 -->
@@ -47,8 +47,8 @@
                 </span>
 
                 <div class="icon-box-content">
-                  <h3 class="icon-box-title">We Support</h3><!-- End .icon-box-title -->
-                  <p>24/7 amazing services</p>
+                  <h3 class="icon-box-title">Hỗ trợ tận tâm</h3><!-- End .icon-box-title -->
+                  <p>24/7</p>
                 </div><!-- End .icon-box-content -->
               </div><!-- End .icon-box -->
             </div><!-- End .col-sm-6 col-lg-3 -->

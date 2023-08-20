@@ -42,7 +42,7 @@
 
         <div class="mb-6"></div><!-- End .mb-6 -->
 
-        <default-trending-products></default-trending-products>
+        <!-- <default-trending-products></default-trending-products> -->
 
         <div class="container">
           <hr class="mb-0">
