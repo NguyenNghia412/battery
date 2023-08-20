@@ -69,7 +69,6 @@ import DefaultTrendingProducts from "./components/Layout/DefaultTrendingProducts
 import DefaultService from "./components/Layout/DefaultService.vue";
 import DefaultFooter from "./components/Layout/DefaultFooter.vue";
 import MobileMenu from "./components/Layout/MobileMenu.vue";
-import "tw-elements/dist/css/tw-elements.min.css";
 // import "./assets/js/jquery.min.js";
 // import "./assets/js/bootstrap.bundle.min.js";
 // import "./assets/js/jquery.hoverIntent.min.js";

@@ -1,7 +1,5 @@
 <template>
-    <ClientOnly>
-        <Carousel></Carousel>
-    </ClientOnly>
+    <Carousel class="mb-5"></Carousel>
 </template>
 <script setup>
 import Carousel from './../Common/Carousel.vue';

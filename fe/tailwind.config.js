@@ -7,12 +7,14 @@ module.exports = {
     "./plugins/**/*.{js,ts}",
     "./nuxt.config.{js,ts}",
     "./app.vue",
-    "./node_modules/tw-elements/dist/js/**/*.js"
+    "./node_modules/flowbite/**/*.{js,ts}"
   ],
   theme: {
     extend: {},
   },
   darkMode: "class",
-  plugins: [require("tw-elements/dist/plugin.cjs")]
+  plugins: [
+    require('flowbite/plugin')
+  ]
 }
 

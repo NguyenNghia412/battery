@@ -2,9 +2,7 @@
     <div class="header-bottom sticky-header">
         <div class="container">
             <div class="flex items-center self-stretch">
-                <ClientOnly>
-                    <mega-menu class="bg-gray-200 flex self-stretch items-center relative text-gray-500"></mega-menu>
-                </ClientOnly>
+                <mega-menu class="bg-gray-200 flex self-stretch items-center relative text-gray-500"></mega-menu>
             </div><!-- End .header-left -->
 
             <div class="header-center">
