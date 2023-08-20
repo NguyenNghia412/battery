@@ -1,10 +1,10 @@
 <template>
     <div id="default-carousel" class="relative w-full bg-gray-100" data-carousel="slide">
         <!-- Carousel wrapper -->
-        <div class="relative container overflow-hidden rounded-lg xs:h-[300px] md:h-[400px]">
+        <div class="relative container overflow-hidden h-[200px] rounded-lg xs:h-[300px] md:h-[400px]">
             <!-- Item 1 -->
             <div v-for="(item, index) in data" :key="index"
-                class="hidden duration-700 ease-in-out xs:h-[300px] md:h-[400px]" data-carousel-item>
+                class="hidden duration-700 ease-in-out h-[200px] xs:h-[300px] md:h-[400px]" data-carousel-item>
                 <div class="w-full h-full bg-cover"
                     :style="`background-image: url('${item.image}'); background-position: 50%;`">
                     <div class="container absolute top-[10%] z-10">

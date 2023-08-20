@@ -13,7 +13,7 @@
             </div><!-- End .header-left -->
 
             <div class="mx-auto flex flex-1 justify-center">
-                <search-input class="w-9/12"></search-input>
+                <search-input class="w-9/12 hidden md:inline-block"></search-input>
             </div>
 
         </div><!-- End .container -->
