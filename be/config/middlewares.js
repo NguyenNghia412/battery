@@ -1,7 +1,18 @@
 module.exports = [
   'strapi::errors',
   'strapi::security',
-  'strapi::cors',
+  {
+    name: 'strapi::cors',
+    config: {
+      enabled: true,
+      headers: '*',
+      origin: '*',
+      // origin: ['https://example.com', 'https://subdomain.example.com', 'https://someotherwebsite.org'],
+      // methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'HEAD', 'OPTIONS'],
+      // headers: ['Content-Type', 'Authorization', 'Origin', 'Accept'],
+      // keepHeaderOnError: true,
+    },
+  },
   'strapi::poweredBy',
   'strapi::logger',
   'strapi::query',

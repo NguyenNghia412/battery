@@ -2,14 +2,19 @@
   "name": "nuxt-app",
   "private": true,
   "scripts": {
-    "build": "nuxt build",
-    "dev": "nuxt dev",
-    "generate": "nuxt generate",
+    "build": "nuxt build --dotenv .env",
+    "build:prod": "nuxt build --dotenv .env.prod",
+    "build:staging": "nuxt build --dotenv .env.staging",
+    "dev": "nuxt dev --dotenv .env",
+    "generate": "nuxt generate --dotenv .env",
+    "generate:prod": "nuxt generate  --dotenv .env.prod",
+    "generate:staging": "nuxt generate  --dotenv .env.staging",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare"
   },
   "devDependencies": {
     "@nuxt/devtools": "latest",
+    "@nuxtjs/strapi": "^1.9.3",
     "@types/node": "^18.17.3",
     "autoprefixer": "^10.4.15",
     "nuxt": "^3.6.5",

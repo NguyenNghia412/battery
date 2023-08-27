@@ -13,9 +13,9 @@
             <div class="p-4 pb-0 text-gray-900 md:pb-4 dark:text-white">
                 <ul class="space-y-4" aria-labelledby="mega-menu-dropdown-button">
                     <li v-for="(item, index) in cat" :key="index">
-                        <a :href="item.link"
+                        <a :href="'#'"
                             class="text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500">
-                            {{ item.label }}
+                            {{ item.attributes.name }}
                         </a>
                     </li>
                 </ul>
@@ -28,29 +28,23 @@ import { Bars3Icon, MagnifyingGlassIcon, ChevronDownIcon } from '@heroicons/vue/
 import { onMounted } from 'vue'
 import { initFlowbite } from 'flowbite'
 
-const cat = ref([
-    {
-        link: '#',
-        label: 'Pin nuôi nguồn'
-    },
-    {
-        link: '#',
-        label: 'Pin máy trợ thính'
-    },
-    {
-        link: '#',
-        label: 'Pin sạc và máy sạc pin'
-    },
-    {
-        link: '#',
-        label: 'Pin công nghiệp'
-    },
-    {
-        link: '#',
-        label: 'Pin sạc dự phòng'
-    },
-])
+const { find } = useStrapi()
 
+// const { data, error, execute, refresh } = await useMyFetch('api/product-categories', {
+//     method: 'get'
+// });
+// await clearNuxtData('cat')
+// const { data, error, execute, refresh } = await useAsyncData('cat', useGetCat)
+// const { data, error, execute, refresh } = await useAsyncData('cat', () => $fetch('http://localhost:1337/api/product-categories', {method: 'get'}))
+// const { data, error, execute, refresh } = await useFetch('https://dog.ceo/api/breeds/image/random', {method: 'get', server: true})
+// await clearNuxtData('cat');
+const { data, pending, refresh, error } = await useAsyncData(
+  'cat',
+  () => find('product-categories')
+) 
+
+const cat = ref(data.value?.data || []);
+console.log()
 onMounted(() => {
     initFlowbite()
 })

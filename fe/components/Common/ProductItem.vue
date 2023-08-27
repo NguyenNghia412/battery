@@ -2,7 +2,7 @@
     <div class="product product-2">
         <figure class="product-media">
             <a href="product.html">
-                <img src="../../assets/images/demos/demo-4/products/product-11.jpg" alt="Product image"
+                <img :src="`${baseUrl}${props.thumbnail}`" alt="Product image"
                     class="product-image">
             </a>
 
@@ -43,4 +43,7 @@
         rating: '',
         reviewCount: 0
     })
+
+    const config = useRuntimeConfig();
+    const baseUrl = config.public.baseURL;
 </script>
