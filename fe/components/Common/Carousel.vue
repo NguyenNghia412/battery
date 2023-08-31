@@ -1,28 +1,28 @@
 <template>
     <div id="default-carousel" class="relative w-full bg-gray-100" data-carousel="slide">
         <!-- Carousel wrapper -->
-        <div class="relative container overflow-hidden h-[200px] rounded-lg xs:h-[300px] md:h-[400px]">
+        <div class="relative container mx-auto overflow-hidden h-[200px] rounded-lg xs:h-[300px] md:h-[400px]">
             <!-- Item 1 -->
             <div v-for="(item, index) in data" :key="index"
                 class="hidden duration-700 ease-in-out h-[200px] xs:h-[300px] md:h-[400px]" data-carousel-item>
                 <div class="w-full h-full bg-cover"
                     :style="`background-image: url('${item.image}'); background-position: 50%;`">
-                    <div class="container absolute top-[10%] z-10">
-                        <div class="row justify-content-end">
-                            <div class="col-auto col-sm-7 col-md-6 col-lg-5">
-                                <h3 class="intro-subtitle text-third">
+                    <div class="container mx-auto absolute top-[10%] z-10">
+                        <div class="flex flex-row justify-end">
+                            <div class="sm:w-4/12 md:w-6/12 lg:w-5/12">
+                                <h3 class="mb-2 text-sm md:text-4xl font-light text-[#ef837b]">
                                     {{ item.subTitle }}
                                 </h3>
                                 <!-- End .h3 intro-subtitle -->
-                                <h1 v-for="(ti, idx) in item.title" :key="idx" class="intro-title">
+                                <h1 v-for="(ti, idx) in item.title" :key="idx" class="text-slate-700 text-4xl md:text-7xl mb-1 font-bold">
                                     {{ ti.value }}
                                 </h1>
 
-                                <div class="intro-price">
-                                    <sup class="intro-old-price">
+                                <div class="text-[#777] font-bold sm:mt-2 sm:mb-2 md:mt-4 md:mb-5 space-x-2">
+                                    <sup class="top-[-0.8] font-light text-base md:text-3xl relative">
                                         {{ item.priceSup }}
                                     </sup>
-                                    <span class="text-third">
+                                    <span class="text-third text-4xl md:text-7xl">
                                         {{ item.priceSpan }}
                                     </span>
                                 </div><!-- End .intro-price -->

@@ -1,6 +1,6 @@
 <template>
     <div class="header-bottom sticky-header">
-        <div class="container">
+        <div class="container mx-auto">
             <div class="flex items-center self-stretch">
                 <mega-menu class="bg-gray-200 flex self-stretch items-center relative text-gray-500"></mega-menu>
             </div><!-- End .header-left -->

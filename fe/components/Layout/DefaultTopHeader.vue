@@ -1,7 +1,7 @@
 <template>
     <!-- DEFAULT TOP HEADER -->
     <div class="font-normal text-2xl mb-0 bg-gray-100 py-3">
-        <div class="container relative flex items-center px-3">
+        <div class="container mx-auto relative flex items-center px-3">
             <div class="flex items-center">
                 <a href="tel:#" class="text-gray-500"><i class="icon-phone"></i>Gọi: +0123 456 789</a>
             </div><!-- End .header-left -->

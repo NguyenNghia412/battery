@@ -2,7 +2,7 @@
     <footer class="footer">
         <div class="cta bg-image bg-dark pt-4 pb-5 mb-0"
             style="background-image: url(assets/images/demos/demo-4/bg-5.jpg);">
-            <div class="container">
+            <div class="container mx-auto">
                 <div class="row justify-content-center">
                     <div class="col-sm-10 col-md-8 col-lg-6">
                         <div class="cta-heading text-center">
@@ -27,7 +27,7 @@
             </div><!-- End .container -->
         </div><!-- End .cta -->
         <div class="footer-middle">
-            <div class="container">
+            <div class="container mx-auto">
                 <div class="row">
                     <div class="col-sm-6 col-lg-3">
                         <div class="widget widget-about">
@@ -92,7 +92,7 @@
         </div><!-- End .footer-middle -->
 
         <div class="footer-bottom">
-            <div class="container">
+            <div class="container mx-auto">
                 <p class="footer-copyright">Copyright © 2019 Molla Store. All Rights Reserved.</p>
                 <!-- End .footer-copyright -->
                 <figure class="footer-payments">

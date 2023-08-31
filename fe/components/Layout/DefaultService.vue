@@ -1,6 +1,6 @@
 <template>
     <div class="icon-boxes-container bg-transparent">
-        <div class="container">
+        <div class="container mx-auto">
           <div class="row">
             <div class="col-sm-6 col-lg-3">
               <div class="icon-box icon-box-side">

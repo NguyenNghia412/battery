@@ -1,5 +1,5 @@
 <template>
-    <div class="container">
+    <div class="container mx-auto">
         <div class="row justify-content-center">
             <div class="col-md-6 col-lg-4">
                 <div class="banner banner-overlay banner-overlay-light">

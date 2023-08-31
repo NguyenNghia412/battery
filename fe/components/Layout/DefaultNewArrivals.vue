@@ -1,5 +1,5 @@
 <template>
-    <div class="container for-you">
+    <div class="container mx-auto for-you">
         <div class="heading heading-flex mb-3">
             <div class="heading-left">
                 <h2 class="title">Sản phẩm mới</h2><!-- End .title -->

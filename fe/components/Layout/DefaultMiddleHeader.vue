@@ -1,6 +1,6 @@
 <template>
     <div class="border-b-0 mb-0">
-        <div class="container relative flex items-center px-3">
+        <div class="container mx-auto relative flex items-center px-3">
             <div class="flex items-center">
                 <button class="text-gray-800 hover:cursor-pointer border-0 bg-transparent relative flex items-center justify-center mx-4 p-1 md:hidden">
                     <span class="absolute w-[1px] h-[1px] p-0 overflow-auto whitespace-nowrap blur-0">Toggle mobile menu</span>

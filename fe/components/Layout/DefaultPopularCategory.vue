@@ -1,5 +1,5 @@
 <template>
-    <div class="container">
+    <div class="container mx-auto">
         <h2 class="title text-center mb-4">Explore Popular Categories</h2><!-- End .title text-center -->
 
         <div class="cat-blocks-container">

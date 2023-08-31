@@ -22,7 +22,7 @@
 
       <!-- <default-trending-products></default-trending-products> -->
 
-      <div class="container">
+      <div class="container mx-auto">
         <hr class="mb-0">
       </div><!-- End .container -->
 
