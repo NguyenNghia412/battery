@@ -10,9 +10,9 @@
       <default-slider></default-slider>
       <default-popular-category></default-popular-category>
 
-      <div class="mb-4"></div><!-- End .mb-4 -->
+      <!-- <div class="mb-4"></div> -->
 
-      <default-shop-now></default-shop-now>
+      <!-- <default-shop-now></default-shop-now> -->
 
       <div class="mb-3"></div><!-- End .mb-5 -->
 
