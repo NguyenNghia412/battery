@@ -1,58 +1,44 @@
 <template>
-    <div class="icon-boxes-container bg-transparent">
-        <div class="container mx-auto">
-          <div class="row">
-            <div class="col-sm-6 col-lg-3">
-              <div class="icon-box icon-box-side">
-                <span class="icon-box-icon text-dark">
-                  <i class="icon-rocket"></i>
-                </span>
-                <div class="icon-box-content">
-                  <h3 class="icon-box-title">Miễn phí ship</h3><!-- End .icon-box-title -->
-                  <p>Với đơn trên 3.000.000</p>
-                </div><!-- End .icon-box-content -->
-              </div><!-- End .icon-box -->
-            </div><!-- End .col-sm-6 col-lg-3 -->
-
-            <div class="col-sm-6 col-lg-3">
-              <div class="icon-box icon-box-side">
-                <span class="icon-box-icon text-dark">
-                  <i class="icon-rotate-left"></i>
-                </span>
-
-                <div class="icon-box-content">
-                  <h3 class="icon-box-title">Đổi trả thoải mái</h3><!-- End .icon-box-title -->
-                  <p>Trong vòng 30 ngày</p>
-                </div><!-- End .icon-box-content -->
-              </div><!-- End .icon-box -->
-            </div><!-- End .col-sm-6 col-lg-3 -->
-
-            <div class="col-sm-6 col-lg-3">
-              <div class="icon-box icon-box-side">
-                <span class="icon-box-icon text-dark">
-                  <i class="icon-info-circle"></i>
-                </span>
-
-                <div class="icon-box-content">
-                  <h3 class="icon-box-title">Giảm giá 1 sản phẩm</h3><!-- End .icon-box-title -->
-                  <p>Khi đăng ký tài khoản</p>
-                </div><!-- End .icon-box-content -->
-              </div><!-- End .icon-box -->
-            </div><!-- End .col-sm-6 col-lg-3 -->
-
-            <div class="col-sm-6 col-lg-3">
-              <div class="icon-box icon-box-side">
-                <span class="icon-box-icon text-dark">
-                  <i class="icon-life-ring"></i>
-                </span>
-
-                <div class="icon-box-content">
-                  <h3 class="icon-box-title">Hỗ trợ tận tâm</h3><!-- End .icon-box-title -->
-                  <p>24/7</p>
-                </div><!-- End .icon-box-content -->
-              </div><!-- End .icon-box -->
-            </div><!-- End .col-sm-6 col-lg-3 -->
-          </div><!-- End .row -->
-        </div><!-- End .container -->
-      </div><!-- End .icon-boxes-container -->
+  <div class="bg-transparent">
+    <div class="container mx-auto py-20">
+      <div class="grid grid-cols-4 gap-x-2">
+        <div v-for="(item, idx) in services" :key="idx" class="flex flex-row justify-center items-center space-x-3">
+          <div class="flex flex-row items-center">
+            <component :is="item.icon" class="h-16 w-16 font-semibold" />
+          </div>
+          <div class="">
+            <h3 class="font-semibold mb-0 text-3xl">{{ item.title }}</h3><!-- End .icon-box-title -->
+            <p>{{ item.caption }}</p>
+          </div><!-- End .icon-box-content -->
+        </div><!-- End .icon-box -->
+      </div>
+    </div><!-- End .container -->
+  </div><!-- End .icon-boxes-container -->
 </template>
+
+<script setup>
+import { RocketLaunchIcon, BackwardIcon, InformationCircleIcon, LifebuoyIcon } from '@heroicons/vue/24/outline';
+
+const services = [
+  {
+    icon: RocketLaunchIcon,
+    title: 'Miễn phí ship',
+    caption: 'Với đơn trên 3.000.000',
+  },
+  {
+    icon: BackwardIcon,
+    title: 'Đổi trả thoải mái',
+    caption: 'Trong vòng 30 ngày',
+  },
+  {
+    icon: InformationCircleIcon,
+    title: 'Giảm giá 1 sản phẩm',
+    caption: 'Khi đăng ký tài khoản',
+  },
+  {
+    icon: LifebuoyIcon,
+    title: 'Hỗ trợ tận tâm',
+    caption: '24/7',
+  },
+]
+</script>
