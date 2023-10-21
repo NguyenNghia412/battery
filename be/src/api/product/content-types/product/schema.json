@@ -54,6 +54,10 @@
     },
     "code": {
       "type": "string"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "code"
     }
   }
 }
