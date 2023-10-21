@@ -10,10 +10,11 @@
             <div>
                 <a class="text-[#999] hover:text-[#666]" href="#">{{ props.catName }}</a>
             </div><!-- End .product-cat -->
-            <h3 class="text-[16px] mb-0"><a class="text-[#333] hover:text-blue-500" href="product.html">{{ props.productName }}</a>
+            <h3 class="text-[16px] mb-0"><a class="text-[#333] hover:text-blue-500" href="product.html">{{ props.productName
+            }}</a>
             </h3><!-- End .product-title -->
             <div class="text-blue-500">
-                {{ props.price }}
+                {{ formatCurrency(props.price) }}
             </div><!-- End .product-price -->
         </div><!-- End .product-body -->
     </div><!-- End .product -->
@@ -30,4 +31,12 @@ const props = defineProps({
 
 const config = useRuntimeConfig();
 const baseUrl = config.public.baseURL;
+
+const formatCurrency = (value) => {
+    if (!value) {
+        return '';
+    }
+    const result = value.toLocaleString('it-IT', { style: 'currency', currency: 'VND' });
+    return result;
+}
 </script>

@@ -13,7 +13,7 @@
         <div class="products">
             <div class="row justify-content-center">
                 <div v-for="(p, index) in product" :key="index" class="col-6 col-md-4 col-lg-3">
-                    <product-item :thumbnail="p.attributes.thumbnail?.data.attributes.formats.small.url"
+                    <product-item :thumbnail="p.attributes.thumbnail?.data.attributes.formats.thumbnail?.url"
                         :cat-name="p.attributes?.product_category?.data.attributes.name" :product-name="p.attributes.name"
                         :price="p.attributes.price" :review-count="p.reviewCount" />
                 </div>
@@ -28,7 +28,7 @@ import ProductItem from '~/components/Common/ProductItem.vue';
 const { find } = useStrapi();
 
 // clearNuxtData('product');
-const { data, error } = await useAsyncData('product', () => find('products', { 'populate': '*' }));
+const { data, error, refresh } = await useAsyncData('product', () => find('products', { 'populate': '*' }));
 
 const product = ref(data.value?.data || []);
 </script>
