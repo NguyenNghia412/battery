@@ -28,7 +28,9 @@ const slug = route.params?.slug;
 
 console.log(route);
 // clearNuxtData('product');
-const { data, error, refresh } = await useAsyncData('product', () => findOne('product-categories', slug, { 'populate[products][populate][0]': 'thumbnail' }));
+const { data, error, refresh } = await useAsyncData('product', () => findOne('product-categories', slug, { 'populate[products][populate][0]': 'thumbnail' }), {
+    watch: [() => slug]
+});
 
 const product = ref(data.value?.data?.attributes?.products?.data || []);
 const category = ref(data.value?.data?.attributes || {});
