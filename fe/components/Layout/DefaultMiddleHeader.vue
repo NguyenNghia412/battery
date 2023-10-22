@@ -7,9 +7,9 @@
                     <Bars3Icon class="w-12 h-12 text-gray-800" />
                 </button>
 
-                <a href="index.html" class="logo">
+                <nuxt-link href="/">
                     <img src="../../assets/images/demos/demo-4/logo.png" alt="Molla Logo" width="105" height="25">
-                </a>
+                </nuxt-link>
             </div><!-- End .header-left -->
 
             <div class="mx-auto flex flex-1 justify-center">

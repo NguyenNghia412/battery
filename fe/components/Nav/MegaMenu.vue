@@ -13,10 +13,11 @@
             <div class="p-4 pb-0 text-gray-900 md:pb-4 dark:text-white">
                 <ul class="space-y-4" aria-labelledby="mega-menu-dropdown-button">
                     <li v-for="(item, index) in cat" :key="index">
-                        <a :href="'#'"
+                        <nuxt-link 
+                            :href="`/product-category/${item.attributes?.slug}`"
                             class="text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500">
                             {{ item.attributes.name }}
-                        </a>
+                        </nuxt-link>
                     </li>
                 </ul>
             </div>
